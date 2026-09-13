@@ -1,0 +1,104 @@
+@media (max-width: 1440px) {
+  .carte {
+    width: 95vw;
+  }
+
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.carte {
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 30rem;
+  margin: auto;
+}
+
+.carte-header {
+  text-align: center;
+}
+
+.carte-header-image {
+  width: 6rem; /*96px*/
+  height: 6rem; /*96px*/
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.carte-header-name {
+  font-size: 1.5rem; /*24px*/
+  margin: 0;
+}
+
+.carte-header-location {
+  font-size: 0.875rem; /*14px*/
+  color: hsl(75, 94%, 57%);
+  margin: 0.5rem;
+}
+
+.carte-body {
+  margin-top: 1.5rem;
+}
+
+.carte-body-description {
+  margin-bottom: 1.5rem;
+  font-size: 0.800rem;
+  text-align: center;
+}
+
+.carte-body-links {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  gap: 0.80rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.carte-body-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  font-size: 0.875rem;
+  border-radius: 0.35rem;
+  padding: 0.75rem 1rem;
+}
+
+
+
+.carte-body-link:hover {
+  background-color: hsl(75, 94%, 57%);
+  color : hsl(0, 0%, 8%);
+}
+
+.carte-body-link:focus-visible {
+  outline: 2px solid hsl(75, 94%, 57%);
+  outline-offset: 2px; /* espacement entre le contour et le bouton */
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
