@@ -1,33 +1,69 @@
-One-shot du défi en 2/3h je crois :/ j'ai pas trop fait gaffe à l'heure ou je l'ai commencé ...
+# Composant QR code
 
-J'ai posé la question à l'agent IA pour voir si j'avais bien tout réussi. Je dois pour le coup mieux synthétiser mon HTML comme par exemple les liens : je pouvais les faire sous forme de liste non ordonnée ul et li. Sinon, le reste a été respecté. Je suis pas parfait sur les distances entre les blocs, mais ça se joue à quelques pixels, ah ah ! Je ne vais pas en faire toute une histoire ;) 
+Une carte QR code simple et élégante réalisée dans le cadre d'un défi [Frontend Mentor](https://www.frontendmentor.io/).
 
-En tout cas j'ai appris des choses nouvelles, c'est me principale, je suis content.
+L'objectif de ce projet était de reproduire une interface claire et centrée, tout en conservant une expérience agréable sur les petits comme sur les grands écrans.
 
------ PUSH N°2
+## Aperçu
 
-Modification des div des liens pour une liste non ordonnée, suppression de la marge du bas des liens et suppression du flex-wrap: wrap; qui ne servait à rien. J'ai ensuite demandé à l'agent IA pour voir ce qu'il en pense.
+La page présente :
 
-Encore quelques erreurs, mais bon, là il m'a dit lesquelles : 
-Suppression de justify-content: center; qui ne servait à rien.
-D'après lui, je devrais ajouter un :focus-visible pour les utilisateurs au clavier.
+- un QR code permettant d'accéder à Frontend Mentor ;
+- un titre qui invite à développer ses compétences front-end ;
+- un court texte explicatif ;
+- une mise en page responsive adaptée aux écrans de 360 px à 1440 px.
 
+## Technologies utilisées
 
------- PUSH N°3 
+- HTML5 sémantique ;
+- CSS3 ;
+- Flexbox ;
+- unités relatives et fonction `clamp()` pour une typographie fluide ;
+- police [Outfit](https://fonts.google.com/specimen/Outfit) proposée par Google Fonts.
 
-Après réflexion, j'ai remplacé Flexbox par CSS Grid pour organiser les liens sociaux verticalement. La liste des liens utilise maintenant `display: grid`, avec `gap` pour gérer l'espacement entre chaque élément.
+## Structure du projet
 
-J'ai également amélioré la structure HTML en utilisant une liste non ordonnée avec des éléments `ul` et `li`. Chaque lien est maintenant affiché comme un bloc et son texte est centré avec `text-align: center`.
+```text
+DEFIS_2/
+├── index.html
+├── style.css
+├── README.md
+└── images/
+	├── favicon-32x32.png
+	└── image-qr-code.png
+```
 
-Pour l'accessibilité, j'ai ajouté un état `:focus-visible` afin que les utilisateurs qui naviguent au clavier puissent voir le lien sélectionné. L'état `:hover` modifie aussi la couleur du lien lorsque la souris passe dessus.
+## Mise en page
 
-J'ai corrigé la largeur de .carte pour éviter les débordements sur les petits écrans :
+Le fond bleu clair met en valeur la carte blanche contenant le QR code. La carte possède des angles arrondis, un espacement régulier et un texte centré pour rester fidèle au design du défi.
 
-- ajout de `box-sizing: border-box` ;
-- suppression de `min-width`, qui empêchait la carte de rétrécir ;
-- conservation d'une largeur maximale de `30rem` ;
-- simplification des media queries en une seule règle jusqu'à `1440px` ;
-- utilisation d'une largeur de `95vw` pour laisser la carte s'adapter à la taille de l'écran.
+Les tailles de texte évoluent progressivement avec la largeur de l'écran grâce à `clamp()`. Elles restent ainsi lisibles sur mobile et équilibrées sur ordinateur, sans agrandir excessivement le contenu sur les très grands écrans.
 
-Ces modifications rendent le résultat plus responsive et plus accessible, tout en gardant l'apparence demandée par le défi.  ( oui j'ai utilisé l'agent IA pour me rediger tout ça, faut pas m'en vouloir ;) c'est que du text ! )
+## Utilisation
 
+1. Ouvrir le dossier du projet dans Visual Studio Code.
+2. Ouvrir le fichier `index.html` dans un navigateur.
+3. Pour une meilleure expérience de développement, lancer la page avec une extension comme **Live Server**.
+
+## Ce que j'ai appris
+
+Pendant la réalisation de ce projet, j'ai appris à utiliser `:root` en CSS pour centraliser des variables réutilisables, notamment les tailles de texte. Cela permet de mieux organiser le code et de modifier plus facilement les valeurs principales du projet.
+
+J'ai également utilisé la fonction `clamp()` afin de créer une typographie fluide. Les textes peuvent ainsi rétrécir ou s'agrandir progressivement en fonction de la taille de l'écran, tout en respectant une taille minimale et une taille maximale.
+
+## Ressources utiles
+
+Pour comprendre les différentes notions utilisées dans ce projet, je me suis appuyé sur les ressources suivantes :
+
+- [MDN Web Docs en français](https://developer.mozilla.org/fr/) ;
+- [W3Schools](https://www.w3schools.com/).
+
+## Collaboration avec l'IA
+
+J'ai utilisé l'IA de Google pour m'expliquer certains éléments que je ne comprenais pas complètement pendant mes recherches sur Internet, notamment l'utilisation de `:root` et des variables CSS.
+
+## Auteur
+
+Projet réalisé par **Mr. BILLY Jarod**, apprenti développeur autodidacte.
+
+Défi proposé par [Frontend Mentor](https://www.frontendmentor.io/).
