@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  <main>
+    <section class="blog_container">
+      <div class="blog_image">
+        <img src="./assets/images/illustration-article.svg" alt="article_illustration" title="Illustration" class="image">
+      </div>
+      <div class="blog_content">
+        <div class="blog_category">
+          <p>Learning</p>
+        </div>  
+        <div class="blog_info">
+          <p class="blog_date">Published 21 Dec 2023</p>
+          <h1 class="blog_title">HTML & CSS foundations</h1>
+        </div>
+        <div class="blog_description">
+          <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+        <div class="blog_avatar_auteur">
+          <img src="./assets/images/image-avatar.webp" alt="auteur_avatar" title="Image de l'auteur" class="avatar">
+          <p class="blog_auteur">Greg Hooper</p>
+        </div>
+      </div>
+    </section>
+    <footer class="attribution">
+        <p>Défi proposé par <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Codé par <a href="https://noktru.github.io/CV-2026/">Mr. BILLY Jarod, Apprenti Développeur autodidacte. :D</a>.</p>
+    </footer>
+  </main>
 </body>
 </html>
